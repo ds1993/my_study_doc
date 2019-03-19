@@ -16,6 +16,17 @@
 	#方法3
 	for key, value in enumerate(list):
 		print "key: %d, value: %s" % (key, value)
+## 遍历文件夹
+
+	import os
+	path = "/tmp"
+	for dirpath,dirnames,filenames in os.walk(path):
+		print dirpath
+		print dirnames
+		print filenames
+## 获取环境变量
+
+	os.environ['环境变量名称']
 ## 正则匹配替换
 
 	re.sub(pattern, repl, string, count=0, flags=0)
