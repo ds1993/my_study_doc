@@ -27,3 +27,13 @@
 
 	update-alternatives --install <链接> <名称> <路径> <优先级>: 注册
 	update-alternatives --config <名称>: 选择
+## 软链接创建
+
+	ln -s [源文件或目录] [目标文件或目录]
+## 判断文件是否存在
+
+	if [ -f "/data/filename" ];then
+	echo "文件存在"
+	else
+	echo "文件不存在"
+	fi
